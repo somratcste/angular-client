@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="card-panel">
+		{{title}}
+			<form ng-submit="saveNote()">
+				<div class="input-field">
+					<input type="text" class="validate" ng-model="Note.name">
+		          	<label>Title</label>
+				</div>
+				<div class="input-field">
+					<textarea class="materialize-textarea" ng-model="Note.description"></textarea>
+		          <label>Description</label>
+				</div>
+				<button class="btn waves-effect" type="submit">
+					{{button}}
+				</button>
+			</form>
+		</div>	
+	</div>
+</div>
