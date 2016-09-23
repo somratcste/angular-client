@@ -1,6 +1,6 @@
 'use strict'
 angular.module('Client')
-	.controller('IndexNoteCtrl' , function($scope, NoteResource){
+	.controller('IndexNoteCtrl' , function($scope, NoteResource , $location , $timeout){
 		$scope.Notes = NoteResource.query();
 		$scope.removeNote = function(id) 
 		{
@@ -34,7 +34,7 @@ angular.module('Client')
 		});
 		$scope.saveNote = function(){
 			NoteResource.update($scope.Note);
-			Materialize.toast('Update Note' , 5000 , 'green accent-4');
+			Materialize.toast('Note Updated' , 5000 , 'green accent-4');
 			$timeout(function(){
 				$location.path('/notes');
 			},1000);
