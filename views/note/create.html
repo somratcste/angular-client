@@ -5,11 +5,11 @@
 			<form ng-submit="saveNote()">
 				<div class="input-field">
 					<input type="text" class="validate" ng-model="Note.name">
-		          	<label>Title</label>
+				<label>{{Title}}</label>
 				</div>
 				<div class="input-field">
 					<textarea class="materialize-textarea" ng-model="Note.description"></textarea>
-		          <label>Description</label>
+		          <label>{{Description}}</label>
 				</div>
 				<button class="btn waves-effect" type="submit">
 					{{button}}

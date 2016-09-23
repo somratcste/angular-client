@@ -16,6 +16,8 @@ angular.module('Client')
 	.controller('CreateNoteCtrl', function($scope, NoteResource , $location , $timeout){
 		$scope.button = "Save";
 		$scope.title = "Create Note";
+		$scope.Title = "Title";
+		$scope.Description = "Description";
 		$scope.Note = {};
 		$scope.saveNote = function(){
 			//console.log($scope.Note);
