@@ -2,7 +2,7 @@
 angular.module('Client',['ngResource','ngRoute'])
 	.config(function($routeProvider){
 		$routeProvider
-		.when('/notes' , {
+		.when('/' , {
 			templateUrl : 'views/note/index.html',
 			controller : 'IndexNoteCtrl'
 		})
